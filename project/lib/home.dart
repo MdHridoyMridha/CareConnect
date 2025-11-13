@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 
+
+
 void main() {
   runApp(CareConnectApp());
 }
 
 class CareConnectApp extends StatelessWidget {
+  const CareConnectApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,6 +30,8 @@ class ChatMessage {
 }
 
 class ChatScreen extends StatefulWidget {
+  const ChatScreen({super.key});
+
   @override
   _ChatScreenState createState() => _ChatScreenState();
 }
@@ -36,7 +42,7 @@ class _ChatScreenState extends State<ChatScreen>
   bool _isListening = false;
   late AnimationController _animationController;
 
-  List<ChatMessage> _messages = [];
+  final List<ChatMessage> _messages = [];
 
   @override
   void initState() {
