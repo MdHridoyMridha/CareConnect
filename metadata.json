@@ -1,0 +1,5 @@
+{
+  "name": "CareConnect",
+  "description": "An AI Voice Assistant for Personalized Healthcare and Emotional Connectivity",
+  "requestFramePermissions": ["microphone", "notifications"]
+}
